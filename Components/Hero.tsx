@@ -5,7 +5,7 @@ export default function Hero() {
         <div className={style.hero}>
             <div className={style.overlay}></div>
             <h1>Mieux Manger</h1>
-            <p>Un choix que nous sommes tous capable de faire pour être en meilleure santé.</p>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
     )
 }
