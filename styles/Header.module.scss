@@ -1,0 +1,56 @@
+.header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+}
+
+.logo {
+  position: relative;
+  flex: 1;
+  padding-left: 20px;
+  & > p{
+    position: absolute;
+    top: -4px;
+    &:nth-of-type(1) {
+      position: absolute;
+      font-size: 11px;
+      top: 4px;
+      left: 21px;
+    }
+    &:nth-of-type(2) {
+      font-size: 26px;
+      & > span {
+        position: absolute;
+        font-size: 12px;
+        top: 3px;
+      }
+    }
+  }
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > span {
+    height: 4px;
+    border-radius: 3px;
+    background-color: black;
+    width: 28px;
+    display: block;
+    margin: 1px;
+
+    &:nth-of-type(3) {
+      width: 20px;
+      margin-left: 8px;
+    }
+  }
+}

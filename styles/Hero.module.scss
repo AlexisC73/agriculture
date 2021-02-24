@@ -1,0 +1,37 @@
+
+.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: red;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80');
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    color: white;
+    z-index: 1;
+    font-family: 'Playfair Display';
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-family: Montserrat;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
