@@ -1,11 +1,11 @@
 import style from '../styles/Recommandations.module.scss'
 import Ble from "./assets/icon/ble";
 import Apple from "./assets/icon/Apple";
-import {useLayoutEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 
 export default function Recommandations () {
     const listRef = useRef()
-    useLayoutEffect(() => {
+    useEffect(() => {
         if (listRef['current'] !== undefined) {
             // @ts-ignore
             const children = [...listRef.current.childNodes]

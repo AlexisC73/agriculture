@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Header from '../Components/Header'
 import Hero from '../Components/Hero'
-import Recommandations from "../Components/Recommandations";
+// @ts-ignore
+import Recommandations from '../Components/Recommandations';
 
 export default function Home() {
     return (
