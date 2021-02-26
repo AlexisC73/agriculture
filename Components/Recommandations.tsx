@@ -11,7 +11,6 @@ export default function Recommandations () {
             const children = [...listRef.current.childNodes]
             const observer = new IntersectionObserver(function (entries) {
                 entries.forEach(entry => {
-                    console.log(entry.intersectionRatio)
                     if(entry.intersectionRatio >= 1) {
                         entry.target.classList.remove(style.not_visible)
                         //observer.unobserve(entry.target)
