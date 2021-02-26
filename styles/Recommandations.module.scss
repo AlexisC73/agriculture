@@ -14,12 +14,34 @@
   ul {
     margin-top: 20px;
     padding: 0;
+    max-width: 1040px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     li {
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 40px 0;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: column;
+      }
+
+      &:nth-of-type(2) {
+        p, svg {
+          transition-delay: .3s;
+        }
+      }
+      &:nth-of-type(3) {
+        p, svg {
+          transition-delay: .6s;
+        }
+      }
 
       &.not_visible {
         p, svg {
@@ -29,20 +51,37 @@
           p {
             transform: translateX(-100px);
             z-index: 0;
+
+            @media screen and (min-width: 768px) {
+              transform: translateX(0px);
+              transform: translateY(-100px);
+            }
           }
           svg {
             z-index: 1;
             transform: translateX(100px);
+            @media screen and (min-width: 768px) {
+              transform: translateX(0px);
+              transform: rotate(270deg);
+            }
           }
         }
         &:nth-child(2n) {
           p {
             transform: translateX(100px);
             z-index: 0;
+            @media screen and (min-width: 768px) {
+              transform: translateX(0px);
+              transform: translateY(-100px);
+            }
           }
           svg {
             z-index: 1;
             transform: translateX(-100px);
+            @media screen and (min-width: 768px) {
+              transform: translateX(0px);
+              transform: rotate(270deg);
+            }
           }
         }
       }
@@ -66,16 +105,28 @@
       &:nth-child(2n) {
         svg {
           order: 2;
+          @media screen and (min-width: 768px) {
+            order: 1;
+          }
         }
         p {
           order: 1;
           margin-right: 30px;
+          @media screen and (min-width: 768px) {
+            order: 2;
+            margin: 0;
+            margin-top: 20px;
+          }
         }
       }
 
       &:nth-child(2n + 1) {
         p {
           margin-left: 30px;
+          @media screen and (min-width: 768px) {
+            margin: 0;
+            margin-top: 20px;
+          }
         }
       }
     }

@@ -2,12 +2,15 @@
   width: 100vw;
   height: 70px;
   display: flex;
+  padding: 0 20px;
+  @media screen and (min-width: 768px){
+    padding: 0 50px;
+  }
 }
 
 .logo {
   position: relative;
   flex: 1;
-  padding-left: 20px;
   & > p{
     position: absolute;
     top: -4px;
@@ -41,6 +44,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px){
+    right: 50px;
+  }
 
   & > span {
     height: 4px;
