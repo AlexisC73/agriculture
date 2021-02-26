@@ -51,6 +51,14 @@
         color: $color-tertiary;
         font-weight: 500;
         margin-top: 50px;
+        transition: all .8s;
+
+        &:hover {
+          color: white;
+          border-color: white;
+          background-color: $color-tertiary;
+          transform: scale(1.2);
+        }
       }
     }
   }
